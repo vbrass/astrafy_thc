@@ -11,13 +11,13 @@ sources:
     schema: astrafy_thc
     
     tables:
-      - name: orders_rectrutments
+      - name: orders_recrutement
         description: >
           Raw orders table. One row represents one order.
           Contains columns: date, order id, customer id and net sales.
           Dates from: 01-01-2022 and 31-12-2023
         
-      - name: sales_recrutments
+      - name: sales_recrutement
         description: >
           Raw sales table. One row represent one order per product.
           Contains columns: date, customer id, order id, product id, net sales and quantity.
