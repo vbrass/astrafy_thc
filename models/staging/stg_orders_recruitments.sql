@@ -1,3 +1,3 @@
 select
     *
-from {{ source('astrafy_thc', 'orders_recrutments') }}
+from {{ source('astrafy_thc', 'orders_recrutement') }}
