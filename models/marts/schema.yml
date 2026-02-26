@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: orders_2023_count
+    description: >
+      Aggregated count of all orders placed in the year 2023
+    
+    columns:
+      - name: orders_2023
+        description: Number of orders placed in 2023

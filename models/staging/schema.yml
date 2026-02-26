@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: stg_orders_recrutement
+    description: >
+      Staging model for orders. Standardizes raw orders data:
+      Renames columns and cast types for analysis
+
+    columns:
+      - name: orders_id
+        description: Unique identifier for each order
+        tests:
+          - not_null
+          - unique
+        
+      - name: customers_id
+        description: Unique identifier for the customer who placed the order
+        tests:
+          - not_null
+
+      - name: order_date
+        description: Date when the order took place
+        tests:
+          - not_null
+
+      - name: net_sales
+        description: Total amount of the order in currency units
