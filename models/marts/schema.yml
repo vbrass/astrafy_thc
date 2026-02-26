@@ -19,3 +19,13 @@ models:
         description: Month of the order, in the format YYYY-MM
       - name: number_of_orders
         description: Total number of orders placed during the month
+
+  - name: E3_orders_products_monthly
+    description: >
+      Average products placed per order in 2023
+    
+    columns:
+      - name: order_month
+        description: Month of the order, in the format YYYY-MM
+      - name: avg_products_per_order
+        description: Average number of products ordered per order
