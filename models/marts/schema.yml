@@ -1,10 +1,21 @@
 version: 2
 
 models:
-  - name: orders_2023_count
+  - name: E1_orders_2023_count
     description: >
       Aggregated count of all orders placed in the year 2023
     
     columns:
       - name: orders_2023
         description: Number of orders placed in 2023
+
+  - name: E2_orders_2023_monthly
+    description: >
+      Number of orders per month in the year 2023
+      One row per calendar month
+    
+    columns:
+      - name: order_month
+        description: Month of the order, in the format YYYY-MM
+      - name: number_of_orders
+        description: Total number of orders placed during the month
