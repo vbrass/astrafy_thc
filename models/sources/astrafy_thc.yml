@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: astrafy_thc
+    database: astrafy-thc-488420
+    schema: astrafy_thc
+    tables:
+      - name: orders_rectrutments
+      - name: sales_recrutments
