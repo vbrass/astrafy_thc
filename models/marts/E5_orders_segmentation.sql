@@ -5,7 +5,7 @@ with orders_2023 as (
     select
         order_id,
         customer_id,
-        order_date
+        order_date,
     from {{ ref('stg_orders_recrutement') }}
     where extract(year from order_date) = 2023
 ),
@@ -35,6 +35,6 @@ select
         when past_orders_count = 0 then 'New'
         when past_orders_count between 1 and 3 then 'Returning'
         when past_orders_count >= 4 then 'VIP'
-    end as order_segment
+    end as order_segmentation
 from customer_past_orders
 order by order_date
