@@ -29,3 +29,28 @@ models:
         description: Month of the order, in the format YYYY-MM
       - name: avg_products_per_order
         description: Average number of products ordered per order
+
+  - name: E4_orders_with_qty
+    description: >
+      Aggregated table of all orders in 2022 and 2023,
+      with one row per order and the total quantity of products per order.
+    columns:
+      - name: order_id
+        description: Unique identifier for each order
+        tests:
+          - not_null
+          - unique
+      - name: customer_id
+        description: Unique identifier of the customer who placed the order
+        tests:
+          - not_null
+      - name: order_date
+        description: Date when the order was placed
+        tests:
+          - not_null
+      - name: net_sales
+        description: Total amount of the order in currency units
+      - name: qty_product
+        description: Total quantity of products in the order
+        tests:
+          - not_null
