@@ -30,12 +30,15 @@ The project follows a standard modern analytics stack:
 ├── dbt/
 │ ├── models/
 │ │ ├── staging/
-│ │ │ └── stg_orders_recrutement.sql
+│ │ │ ├── stg_orders_recrutement.sql
+│ │ │ └── stg_sales_recrutement.sql
 │ │ ├── marts/
-│ │ │ ├── orders_2023_count.sql
-│ │ │ ├── orders_2023_by_month.sql
-│ │ │ ├── orders_with_qty_2022_2023.sql
-│ │ │ └── orders_2023_with_segmentation.sql
+│ │ │ ├── E1_orders_2023_count.sql
+│ │ │ ├── E2_orders_2023_monthly.sql
+│ │ │ ├── E3_orders_products_monthly.sql
+│ │ │ ├── E4_orders_with_quantity.sql
+│ │ │ ├── E5_orders_segmentation.sql
+│ │ │ └── E6_orders_segmentation.sql
 │ │ └── schema.yml
 │ └── dbt_project.yml
 │
