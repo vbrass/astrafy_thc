@@ -31,15 +31,16 @@ The project follows a standard modern analytics stack:
 │ ├── models/
 │ │ ├── staging/
 │ │ │ ├── stg_orders_recrutement.sql
-│ │ │ └── stg_sales_recrutement.sql
+│ │ │ ├── stg_sales_recrutement.sql
+│ │ │ └── schema.yml
 │ │ ├── marts/
 │ │ │ ├── E1_orders_2023_count.sql
 │ │ │ ├── E2_orders_2023_monthly.sql
 │ │ │ ├── E3_orders_products_monthly.sql
 │ │ │ ├── E4_orders_with_quantity.sql
 │ │ │ ├── E5_orders_segmentation.sql
-│ │ │ └── E6_orders_segmentation.sql
-│ │ └── schema.yml
+│ │ │ ├── E6_orders_segmentation.sql
+│ │ │ └── schema.yml
 │ └── dbt_project.yml
 │
 ├── lookml/
